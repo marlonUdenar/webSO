@@ -496,7 +496,7 @@ header {
 }
 
 .logo_section {
-    background: #DC6D04;
+    background: #07070A;
     text-align: center;
     line-height: 122px;
 	height: 122px;
@@ -506,7 +506,6 @@ header {
     position: absolute;
     width: 58px;
     height: 122px;
-    background: url('../images/head_d.png');
     content: "";
     right: -57px;
 }
@@ -518,11 +517,11 @@ nav.main-menu {
 
 .menu-area-main li:hover a,
 .menu-area-main li:focus a {
-	color: #FB8B24;
+	color: #1793d1;
 }
 
 .menu-area-main li.active a {
-	color: #FB8B24;
+	color: #1793d1;
 }
 
 .right_cart_section {
@@ -2090,7 +2089,7 @@ ul.social_icon li a {
 
 
 .about-bg {
-	background-color: #07070A;
+	background-color: #1e344c;
 }
 
 .about-bg .aboutheading h3 { 
@@ -2167,7 +2166,7 @@ carousel START
   width: 100%;
   height: 100vh;
   margin-top: -7%;
-  background-color: #07070A;
+  background-color: #1e344c;
   background-image: url('Images/bg-img.png');
   background-repeat: no-repeat;
   background-position: center;
