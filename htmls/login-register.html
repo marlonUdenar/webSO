@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+        <title>E-Sports Epicenter</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="images/slog.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <!-- Tweaks for older IEs-->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    </head>
+    <!-- body -->
+    <body class="main-layout">
+        <!-- loader  -->
+        <div class="loader_bg">
+            <div class="loader"><img src="images/load2.gif" alt="" /></div>
+        </div>
+     <!-- end loader -->
+        <!-- header -->
+        <header>
+            <!-- header inner -->
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-lg-3 logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="menu-area">
+                        <div class="limit-box">
+                            <nav class="main-menu">
+                            <ul class="menu-area-main">
+                                <li >
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="juegos.html">Juegos</a>
+                                </li>
+                                <li>
+                                    <a href="noticias.html">Noticias</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Eventos</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">Iniciar Sesión</a>
+                                </li>
+                                <li>
+                                    <a href="#">Registrarse</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/search_icon.png" alt="#" /></a>
+                                </li>
+                            </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+        </header>
+        <!-- end header -->
+
+        <!-- section LOGIN-->
+        <div class="section layout_padding dark_bg">
+            <div class="container">
+                <div class="containerlog" id="containerlog">
+                    <div class="form-containerlog sign-up">
+                        <form>
+                            <h1>Crear Cuenta</h1>
+                            <div class="social-icons">
+                                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <span>ó usa tus redes para registrarte</span>
+                            <input type="text" placeholder="Nombre">
+                            <input type="email" placeholder="Correo Electronico">
+                            <input type="password" placeholder="Constraseña">
+                            <button>Registrarce</button>
+                        </form>
+                    </div>
+                    <div class="form-containerlog sign-in">
+                        <form>
+                            <h1>Iniciar Sesión</h1>
+                            <div class="social-icons">
+                                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <span>ó usa tu correo para ingresar</span>
+                            <input type="email" placeholder="Correo Electronico">
+                            <input type="password" placeholder="Constraseña">
+                            <a href="#">olvidaste tu contraseña?</a>
+                            <button>Iniciar Sesión</button>
+                        </form>
+                    </div>
+                    <div class="toggle-containerlog">
+                        <div class="toggle">
+                            <div class="toggle-panel toggle-left">
+                                <h1>Bienvenido</h1>
+                                <p>Si ya tienes una cuenta inicia sesión para poder disfrutar de todo nuestro contenido</p>
+                                <button class="hidden" id="login">Iniciar Sesión</button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h1>Hola, Gamer</h1>
+                                <p>Registrate con nostros y mantente actualizado de todo sobre tus video juegos favoritos</p>
+                                <button class="hidden" id="register">Registrarce</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end section LOGIN-->
+      
+        <!-- footer -->
+        <footer>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <a href="#"><img src="images/footer_logo.png" alt="#" /></a>
+                    <ul class="contact_information">
+                        <li><span><img src="images/location_icon.png" alt="#" /></span><span class="text_cont">Pasto<br>Colombia</span></li>
+                        <li><span><img src="images/phone_icon.png" alt="#" /></span><span class="text_cont">317 305 4159<br>317 305 4159</span></li>
+                        <li><span><img src="images/mail_icon.png" alt="#" /></span><span class="text_cont">demo@gmail.com<br>soporte@gmail.com</span></li>
+                    </ul>
+                    <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer_links">
+                        <h3>Acceso Rapido</h3>
+                        <ul>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Juegos</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Noticias</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> E-Sports</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Blog</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Comentarios</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_links">
+                        <h3>Nos Puedes Encontrar En</h3>
+                        <ol>
+                        <li><img class="img-responsive" src="images/ins.png" alt="#" /></li>
+                        <li><img class="img-responsive" src="images/you.png" alt="#" /></li>
+                        <li><img class="img-responsive" src="images/tw.png" alt="#" /></li>
+                        <li><img class="img-responsive" src="images/red.png" alt="#" /></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_links">
+                        <h3>Contactanos</h3>
+                        <form action="index.html">
+                        <fieldset>
+                            <div class="field">
+                                <input type="text" name="name" placeholder="nombre" required="" />
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" placeholder="email" required="" />
+                            </div>
+                            <div class="field">
+                                <input type="text" name="subject" placeholder="asunto" required="" />
+                            </div>
+                            <div class="field">
+                                <textarea placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="field">
+                                <div class="center">
+                                    <button class="reply_bt">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <div class="cpy">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p></a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/plugin.js"></script>
+        <!-- Scrollbar Js Files -->
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/register.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
