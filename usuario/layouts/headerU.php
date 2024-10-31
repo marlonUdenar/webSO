@@ -21,7 +21,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="../css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="../images/logo.png" type="image/gif" />
+      <link rel="icon" href="../images/logo.png" type="image/gif"  />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -48,7 +48,7 @@
                <div class="col-lg-3 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="indexU.php"><img src="../images/logo.png" alt="#"></a> </div>
+                        <div class="logo"> <a href="indexU.php"><img src="../images/logo.png" alt="#" style="height: 110px;"></a> </div>
                      </div>
                   </div>
                </div>

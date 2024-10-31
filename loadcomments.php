@@ -78,7 +78,6 @@ if ($result->num_rows > 0) {
                 echo '        </div>' . "\n";
                 echo '    </div>' . "\n";
                 echo '</div>' . "\n";
-                
             }
             
             echo '                            </div>' . "\n";
