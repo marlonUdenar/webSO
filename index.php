@@ -152,7 +152,7 @@ homeLink.classList.add("active");
                      <div class="blog_cont_2">
                            <h3 class="black_font"><?php echo $titulo; ?></h3>
                            <h5 class="grey_font"><?php echo $fecha; ?></h5>
-                           <p class="black_font"><?php echo $descripcion; ?></p>
+                           <p class="white_font"><?php echo $descripcion; ?></p>
                            <div class="navigation_buttons">
                               <a id="boton_anterior" href="?pagina=<?php echo ($pagina_actual - 1); ?>" class="btn btn-outline-primary mr-2"><i class="fas fa-chevron-left"></i></a>
                               <a id="boton_siguiente" href="?pagina=<?php echo ($pagina_actual + 1); ?>" class="btn btn-outline-primary"><i class="fas fa-chevron-right"></i></a>
