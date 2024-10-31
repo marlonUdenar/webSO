@@ -81,9 +81,6 @@
                               <li id="login-color">
                                  <a href="login-register.php">Iniciar Sesión</a>
                               </li>
-                              <li>
-                                 <a href="#"><img src="images/search_icon.png" alt="#" /></a>
-                              </li>
                            </ul>
                         </nav>
                      </div>

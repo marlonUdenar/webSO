@@ -24,7 +24,7 @@ homeLink.classList.add("active");
              <div class="row">
                  <div class="col-md-12">
                      <div class="aboutheading">
-                         <img src="../images/logolong4.png" alt="Logo de E-Sports-Epicenter">
+                         <img src="../images/logolong2.png" alt="Logo de E-Sports-Epicenter">
                      </div>
                  </div>
              </div>
@@ -111,120 +111,76 @@ homeLink.classList.add("active");
       <!-- end section -->
       
       <!-- section --> 
+      <?php
+      // Incluye tu archivo de conexión a la base de datos
+      include("../conexion.php");
+
+      // Establece el número de resultados por página
+      $resultados_por_pagina = 1;
+
+      $sql_total_filas = "SELECT COUNT(*) AS total_filas FROM tablog";
+      $result_total_filas = $conex->query($sql_total_filas);
+      $total_filas = $result_total_filas->fetch_assoc()['total_filas'];
+
+      // Obtiene la página actual, si no se establece, es la página 1
+      $pagina_actual = isset($_GET['pagina']) ? $_GET['pagina'] : 1;
+
+      if ($pagina_actual <= 0){
+         $pagina_actual = 1;
+      } 
+
+      if ($pagina_actual > $total_filas){
+         $pagina_actual = $total_filas;
+      }
+
+      // Calcula el offset para la consulta SQL
+      $offset = ($pagina_actual - 1);
+
+      // Consulta SQL para obtener los datos
+      $sql = "SELECT id,titulo, fecha, des,img FROM tablog LIMIT $resultados_por_pagina OFFSET $offset";
+      $result = $conex->query($sql);
+
+      // Verifica si hay resultados
+      if ($result->num_rows > 0) {
+         // Obtiene la fila actual
+         $row = $result->fetch_assoc();
+         $titulo = $row['titulo'];
+         $fecha = $row['fecha'];
+         $descripcion = $row['des'];
+         $img = $row["img"];
+         $id = $row["id"];
+      }
+
+      // Cierra la conexión a la base de datos
+      $conex->close();
+      ?>
+      <!-- end section -->
+      <!-- section -->
       <div class="section layout_padding blog_blue_bg purp_silver">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-8 offset-md-2">
-                  <div class="heading">
-                     <h3>Blog</h3>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
+      <div class="container">
+         <div class="row">
                <div class="col-md-8 offset-md-2">
                   <div class="full">
                      <div class="big_blog">
-                        <img class="img-responsive" src="../images/blog_1.png" alt="#" />
+                        <?php echo ' <img src="data:image/png;base64,' . base64_encode($img) . '" alt="User Profile Image"> '; ?>
+                    </div>
+                     </div>
                      </div>
                      <div class="blog_cont_2">
-                        <h3>Comienza la Nueva Temporada de League Of Legends</h3>
-                        <p class="sublittle">Marzo 19 2023  5 Leidos</p>
-                        <p>¡Empezamos este año con todo trayéndoles una gran actualización de jugabilidad! ¡Tenemos Vacuolarvas, Vacuomitas, Monstruos Vacuonatos, tres formas distintas del Barón Nashor con fosas personalizadas, cambios al mapa en la jungla y los carriles, más de 100 cambios a objetos (incluidos objetos nuevos), una mejora a Hwei, música dinámica, nuevas misiones dentro del juego, CHOQUES DE PUÑOS y mucho más!
-                        </p>
+                           <h3 class="black_font"><?php echo $titulo; ?></h3>
+                           <h5 class="grey_font"><?php echo $fecha; ?></h5>
+                           <p class="black_font"><?php echo $descripcion; ?></p>
+                           <div class="navigation_buttons">
+                              <a id="boton_anterior" href="?pagina=<?php echo ($pagina_actual - 1); ?>" class="btn btn-outline-primary mr-2"><i class="fas fa-chevron-left"></i></a>
+                              <a id="boton_siguiente" href="?pagina=<?php echo ($pagina_actual + 1); ?>" class="btn btn-outline-primary"><i class="fas fa-chevron-right"></i></a>
+                           </div>
                      </div>
                   </div>
                </div>
-            </div>
          </div>
       </div>
-      <!-- end section -->
-      <!-- section -->
-      <section class="layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="heading" style="padding-left: 15px;padding-right: 15px;">
-                     <h4 style="border-bottom: solid #333 1px;">Comentarios / 2</h4>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="full comment_blog_line">
-                     <div class="row">
-                        <div class="col-md-1">
-                           <img src="../images/c_1.png" alt="#" />
-                        </div>
-                        <div class="col-md-9">
-                           <div class="full contact_text">
-                              <h3>Juan</h3>
-                              <h4>Publicado en Junio 15 / 2023 a las 08:15 pm</h4>
-                              <p>He estado usando este sitio web de noticias de juegos durante un tiempo y me ha encantado. Siempre está actualizado con las últimas noticias, anuncios y rumores de la industria. El equipo editorial hace un gran trabajo al seleccionar contenido de alta calidad y atractivo.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="col-md-2">
-                           <a class="reply_bt" href="#">Responder</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="full comment_blog_line">
-                     <div class="row">
-                        <div class="col-md-1">
-                           <img src="../images/c_2.png" alt="#" />
-                        </div>
-                        <div class="col-md-9">
-                           <div class="full contact_text">
-                              <h3>Paula</h3>
-                              <h4>Publicado en enero 10 / 2023 a las 06:53 am</h4>
-                              <p>Soy una gran aficionada a los videojuegos y siempre estoy buscando información sobre nuevos lanzamientos, próximos eventos y noticias de la industria en general. He probado muchos sitios web de noticias de juegos, pero este es sin duda mi favorito.
-                              </p>
-                           </div>
-                        </div>
-                        <div class="col-md-2">
-                           <a class="reply_bt" href="#">Responder</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row margin_top_30">
-               <div class="col-md-12 margin_top_30">
-                  <div class="heading" style="padding-left: 15px;padding-right: 15px;">
-                     <h4>Publica Tu Comentario</h4>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="full comment_form">
-                     <form action="index.php">
-                        <fieldset>
-                           <div class="col-md-12">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <input type="text" name="name" placeholder="Nombre" required="#" />
-                                    <input type="email" name="email" placeholder="Email" required="#" />
-                                 </div>
-                                 <div class="col-md-6">
-                                    <textarea placeholder="Comentario"></textarea>
-                                 </div>
-                              </div>
-                              <div class="row margin_top_30">
-                                 <div class="col-md-12">
-                                    <div class="center">
-                                       <button>Enviar</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </fieldset>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+   </div>
+   <?php require('../loadcommentindx.php') ?> 
       <!-- end section -->
 
 <?php require('./layouts/footerA.php') ?>

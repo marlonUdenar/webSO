@@ -43,7 +43,7 @@
                <div class="col-lg-3 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="indexA.php"><img src="../images/logo.png" alt="#"></a> </div>
+                     <div class="logo"> <a href="indexU.php"><img src="../images/logo.png" alt="#" style="height: 110px;"></a> </div>
                      </div>
                   </div>
                </div>
@@ -69,9 +69,6 @@
                               </li>
                               <li id="login-color">
                                  <a href="login-registerA.php">Gestionar<br>Cuenta</a>
-                              </li>
-                              <li>
-                                 <a href="#"><img src="../images/search_icon.png" alt="#" /></a>
                               </li>
                            </ul>
                         </nav>

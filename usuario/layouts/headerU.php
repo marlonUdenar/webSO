@@ -75,9 +75,6 @@
                               <li id="login-color">
                                  <a href="login-registerU.php">Cuenta</a>
                               </li>
-                              <li>
-                                 <a href="#"><img src="../images/search_icon.png" alt="#" /></a>
-                              </li>
                            </ul>
                         </nav>
                      </div>

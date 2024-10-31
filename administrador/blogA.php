@@ -67,6 +67,72 @@ homeLink.classList.add("active");
       </div>
 
 </section>
+
+      <!-- revolution slider -->
+      <script>
+const homeLink = document.getElementById("blog");
+homeLink.classList.add("active");
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let commentId;  // Variable para guardar el commentId
+
+    // Selecciona todos los botones de responder
+    let replyButtons = document.querySelectorAll('.reply_bt');
+    replyButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            commentId = event.target.getAttribute('data-id');
+            let modal = new bootstrap.Modal(document.getElementById('commentModal'));
+            modal.show();
+        });
+    });
+
+    // Selecciona el botón de enviar
+    let sendButton = document.getElementById('btnEnviar');
+    sendButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        enviarRespuesta(commentId);  // Llama a enviarRespuesta con commentId
+    });
+});
+
+
+
+// JavaScript para enviar la respuesta
+function enviarRespuesta(id) {
+    var respuesta = document.getElementById("replyTextarea").value;
+    var usuario = $("input[name='usuario']").val(); // Obtener el valor del campo oculto "usuario"
+// Obtener el valor del campo oculto "id"
+    console.log("begin.");
+    console.log("Valor de id:", id);
+    $.ajax({
+    type: "POST", // Método de solicitud
+    url: "12.php", // URL del archivo PHP que procesará los datos
+    data: {
+        respuesta: respuesta,
+        usuario: usuario,
+        id: id // Agregar los valores de los campos ocultos
+    },
+    success: function(response) {
+        // La solicitud fue exitosa
+        console.log("Respuesta del servidor:", response); // Log de la respuesta del servidor
+        console.log("Respuesta enviada correctamente.");
+        // Aquí puedes hacer cualquier otra cosa que necesites, como mostrar un mensaje al usuario o redirigirlo a otra página.
+    },
+    error: function(xhr, status, error) {
+        // Ocurrió un error durante la solicitud AJAX
+        console.error("Error al enviar la respuesta:", error);
+        // Aquí puedes manejar el error de alguna manera, como mostrar un mensaje de error al usuario.
+    }
+});
+    document.getElementById("replyTextarea").value = "";
+    // Cierra el modal
+    $('#commentModal').modal('hide');
+    location.reload();
+}
+
+
+
+</script>
       <!-- revolution slider -->
 <div class="Blog-bg">
    <div class="container">
@@ -83,7 +149,6 @@ homeLink.classList.add("active");
 <?php
 // Incluye tu archivo de conexión a la base de datos
 include("../conexion.php");
-
 // Establece el número de resultados por página
 $resultados_por_pagina = 1;
 
@@ -149,7 +214,7 @@ $conex->close();
 </div>
 
       <!-- end section -->
-   
+     
       <!-- end section -->
       <!-- HTML para el modal -->
 <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -172,8 +237,7 @@ $conex->close();
 <!-- section -->
 <?php require('loadcommentsA.php') ?> 
 <!-- section -->
-
-        <div class="row margin_top_30">
+<div class="row margin_top_30">
                <div class="col-md-12 margin_top_30">
                   <div class="heading" style="padding-left: 15px;padding-right: 15px;">
                      <h4>Publica Tu Comentario</h4>
@@ -188,7 +252,7 @@ $conex->close();
                            <div class="col-md-12">
                               <div class="row">
                                  <div class="col-md-6as">
-                                    <input type="text" name="coment" placeholder="Comentario" style=" height: 150px;">
+                                    <input type="text" name="coment" placeholder="tupura" style=" height: 150px;">
                                     <input type="hidden" name="usuario" value="<?php echo $_SESSION['usuario']; ?>">
                                     <!-- Campo oculto para enviar $id -->
                                     <input type="hidden" name="id" value="<?php echo $id; ?>">
