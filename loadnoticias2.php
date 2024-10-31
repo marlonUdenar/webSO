@@ -52,10 +52,10 @@ if ($result->num_rows > 0) {
                     <div class="container">
                         <div class="row">
                         <div class="col-md-6">
-                            <div class="full blog_cont">
+                            <div class="full blog_cont_5">
                                 <h3>' . $row["titulo"] . '</h3>
                                 <h5>' . $row["fecha"] . '</h5>
-                                <p class="white_font">' . $row["des"] . '</p>
+                                <p class="black_font">' . $row["des"] . '</p>
                             </div>
                         </div>
                         <div class="col-md-6">
