@@ -12,11 +12,12 @@ if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
     $newImgContent = file_get_contents($newImage);
 
     // Update the image data in the database
-    $sql = "UPDATE u284478885_main SET image = ? WHERE email = ?";
+    $sql = "UPDATE datosusuario SET image = ? WHERE email = ?";
     $statement = $conex->prepare($sql);
     $statement->bind_param('ss', $newImgContent, $email);
     $result = $statement->execute();
 
+    
     if ($result) {
         echo '
         <script>
