@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
         // Agregar el contenido de la entrada
         echo '          <article class="thumb">';
         echo '              <a href="data:image/png;base64,' . base64_encode($row["img"]) . '" class="image"><img src="data:image/png;base64,' . base64_encode($row["img"]) . '" alt="" /></a>';
-        echo '                  <h2>'.$row["titulo"].'<br>ID del Juego: '.$row["id"].'</h2>';
+        echo '                  <h2>'.$row["titulo"].'<br>ID de publicación: '.$row["id"].'</h2>';
         echo '              <a href="'.$row["url"].'">';
         echo '                  <p>'.$row["des"].'</p>';
         echo '              </a>';
