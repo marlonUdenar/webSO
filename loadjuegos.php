@@ -10,7 +10,7 @@ echo '      <div class="container">';
 echo '          <div class="row">';
 echo '              <div class="col-md-12">';
 echo '                  <div class="aboutheading">';
-echo '                       <h3>Juegos</h3>';
+echo '                       <h3>Por Que Arch?</h3>';
 echo '                  </div>';
 echo '              </div>';
 echo '          </div>';

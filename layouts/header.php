@@ -67,16 +67,16 @@
                                  <a href="index.php">Home</a>
                               </li>
                               <li id="juegos">
-                                 <a href="juegos.php">Juegos</a>
+                                 <a href="juegos.php">Por Que Arch?</a>
                               </li>
                               <li id="noticias">
-                                 <a href="noticias.php">Noticias</a>
+                                 <a href="noticias.php">Instalacion</a>
                               </li>
                               <li id="blog">
-                                 <a href="blog.php">Blog</a>
+                                 <a href="blog.php">Foro</a>
                               </li>
                               <li id="contact">
-                                 <a href="contact.php">Eventos</a>
+                                 <a href="contact.php">Sitios de Interes</a>
                               </li>
                               <li id="login-color">
                                  <a href="login-register.php">Iniciar Sesión</a>
