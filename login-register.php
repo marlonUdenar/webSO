@@ -57,8 +57,8 @@ homeLink.classList.add("active");
                                 <button class="hidden" id="login">Iniciar Sesión</button>
                             </div>
                             <div class="toggle-panel toggle-right">
-                                <h1>Hola, Gamer</h1>
-                                <p>Registrate con nostros y mantente actualizado de todo sobre tus video juegos favoritos</p>
+                                <h1>Hola, Linux Users</h1>
+                                <p>Registrate con nostros y mantente actualizado de todo sobre Arch Linux</p>
                                 <button class="hidden" id="register">Registrarse</button>
                             </div>
                         </div>
