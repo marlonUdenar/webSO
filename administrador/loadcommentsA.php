@@ -34,13 +34,14 @@ if ($result->num_rows > 0) {
             $usuario = $result_usuario->fetch_assoc();
             $img_data = $usuario["image"];
             $nombre = $usuario["nombre"];
-            
-            // Si hay resultados, mostrar la imagen del usuario
-            echo '                            <img src="data:image/png;base64,' . base64_encode($img_data) . '" alt="User Profile Image">' . "\n";
-        } else {
-            // Si no hay resultados, mostrar una imagen por defecto o un mensaje de error
-            // Puedes personalizar esto según tus necesidades
-            echo '                            <img src="imagen_por_defecto.png" alt="User Profile Image">' . "\n";
+            if ($img_data == NULL) {
+
+                // Si no hay resultados, mostrar una imagen por defecto o un mensaje de error
+                // Puedes personalizar esto según tus necesidades
+                echo '                            <img src="../images/profile.png" alt="User Profile Image">' . "\n";
+            }else{
+                echo '                            <img src="data:image/png;base64,' . base64_encode($img_data) . '" alt="User Profile Image">' . "\n";
+            }
         }
         // Consulta SQL para obtener las respuestas asociadas a este comentario
         $sql_respuestas = "SELECT des FROM respuestas WHERE id = '" . $row["id"] . "'";

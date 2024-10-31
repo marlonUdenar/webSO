@@ -8,7 +8,7 @@ homeLink.classList.add("active");
 
 <section>
     <div class="sectionJA">
-        <h1>Publicar Noticia</h2>
+        <h1>Publicar Entrada</h2>
         <form action="cargas/cargarNoticia.php" method="POST" enctype="multipart/form-data">
             <div class="dark_bg2">
                 <div class="panel1">

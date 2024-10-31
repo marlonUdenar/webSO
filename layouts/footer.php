@@ -3,11 +3,11 @@
             <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <a href="#"><img src="images/footer_logo.png" alt="#" /></a>
+                    <a href="#"><img src="images/logo.png" alt="#" style="height: 250px;" /></a>
                     <ul class="contact_information">
                         <li><span><img src="images/location_icon.png" alt="#" /></span><span class="text_cont">Pasto<br>Colombia</span></li>
                         <li><span><img src="images/phone_icon.png" alt="#" /></span><span class="text_cont">317 305 4159<br>317 305 4159</span></li>
-                        <li><span><img src="images/mail_icon.png" alt="#" /></span><span class="text_cont">demo@gmail.com<br>soporte@gmail.com</span></li>
+                        <li><span><img src="images/mail_icon.png" alt="#" /></span><span class="text_cont">administracion@so-udenar-archlinux.site</span></li>
                     </ul>
                     <ul class="social_icon">
                         <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -20,13 +20,10 @@
                     <div class="footer_links">
                         <h3>Acceso Rapido</h3>
                         <ul>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Juegos</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Noticias</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> E-Sports</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Blog</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Comentarios</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Contacto</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Por que Arch?</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Instalacion</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Foro</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Sitios de Interes</a></li>
                         </ul>
                     </div>
                 </div>

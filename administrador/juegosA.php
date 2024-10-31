@@ -7,12 +7,12 @@ homeLink.classList.add("active");
 
 <section>
     <div class="sectionJA">
-        <h1>Publicar Juego</h2>
+        <h1>Publicar Entrada</h2>
         <form action="cargas/cargarJuego.php" method="POST" enctype="multipart/form-data">
             <div class="dark_bg2">
                 <div class="panel1">
                     <input type="text" name="nombreJ" placeholder="titulo">
-                    <input type="text" name="precioJ" placeholder="precio">
+                    <input type="text" name="precioJ" placeholder="fecha">
                     <input type="text" name="linkJ" placeholder="sitio oficial">
                     <input type="file" name="image" accept="image/*">
                 </div>

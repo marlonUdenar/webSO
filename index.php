@@ -139,7 +139,7 @@ homeLink.classList.add("active");
       $conex->close();
       ?>
       <!-- section --> 
-         <div class="section layout_padding blog_blue_bg purp_silver">
+      <div class="section layout_padding blog_blue_bg purp_silver">
       <div class="container">
          <div class="row">
                <div class="col-md-8 offset-md-2">
