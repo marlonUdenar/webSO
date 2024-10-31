@@ -14,15 +14,16 @@ if (isset($_POST['ecoment'])) {
     if (mysqli_query($conex, $consulta)) {
         // Imprimir mensaje en la consola del navegador
         echo "<script>console.log('Comentario insertado correctamente');</script>";
+        enviarNotificacion($des, $email);
     } else {
         // Imprimir mensaje de error en la consola del navegador
         echo "<script>console.error('Error al insertar el comentario: " . mysqli_error($conex) . "');</script>";
     }
 }
-function enviarNotificacion($comentario) {
+function enviarNotificacion($des,$email) {
     $to = "administracion@so-udenar-archlinux.site"; // Reemplaza con tu correo
     $subject = "Nuevo comentario recibido";
-    $message = "Se ha recibido un nuevo comentario:\n\n" . $comentario;
+    $message = "Se ha recibido un nuevo comentario:\n\n" . $des;
     $headers = "From:  $email"; // Cambia esto según tu dominio
 
     if(mail($to, $subject, $message, $headers)) {
