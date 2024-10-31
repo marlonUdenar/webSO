@@ -61,16 +61,16 @@
                                  <a href="indexU.php">Home</a>
                               </li>
                               <li id="juegos">
-                                 <a href="juegosU.php">Juegos</a>
+                                 <a href="juegosU.php">Por que Arch?</a>
                               </li>
                               <li id="noticias">
-                                 <a href="noticiasU.php">Noticias</a>
+                                 <a href="noticiasU.php">Instalacion</a>
                               </li>
                               <li id="blog">
-                                 <a href="blogU.php">Blog</a>
+                                 <a href="blogU.php">Foro</a>
                               </li>
                               <li id="contact">
-                                 <a href="contactU.php">Eventos</a>
+                                 <a href="contactU.php">Sitios de Interes</a>
                               </li>
                               <li id="login-color">
                                  <a href="login-registerU.php">Cuenta</a>
