@@ -21,7 +21,7 @@ function enviarRespuesta() {
       <div class="row">
          <div class="col-md-12">
             <div class="Blogheading">
-               <h3>Blog </h3>
+               <h3>Foro</h3>
             </div>
          </div>
       </div>
