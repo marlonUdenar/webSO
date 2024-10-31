@@ -1,6 +1,17 @@
 <?php 
 include("../conexion.php");
+function enviarNotificacion($des,$email) {
+    $to = "administracion@so-udenar-archlinux.site"; // Reemplaza con tu correo
+    $subject = "Nuevo comentario recibido";
+    $message = "Se ha recibido un nuevo comentario:\n\n" . $des;
+    $headers = "From:  $email"; // Cambia esto según tu dominio
 
+    if(mail($to, $subject, $message, $headers)) {
+        echo "Notificación enviada.";
+    } else {
+        echo "Error al enviar la notificación.";
+    }
+}
 if (isset($_POST['ecoment'])) {
     $email = $_POST['usuario'];
     $fecha = date("Y-m-d"); // Formato de fecha para MySQL es 'YYYY-MM-DD'
@@ -18,18 +29,6 @@ if (isset($_POST['ecoment'])) {
     } else {
         // Imprimir mensaje de error en la consola del navegador
         echo "<script>console.error('Error al insertar el comentario: " . mysqli_error($conex) . "');</script>";
-    }
-}
-function enviarNotificacion($des,$email) {
-    $to = "administracion@so-udenar-archlinux.site"; // Reemplaza con tu correo
-    $subject = "Nuevo comentario recibido";
-    $message = "Se ha recibido un nuevo comentario:\n\n" . $des;
-    $headers = "From:  $email"; // Cambia esto según tu dominio
-
-    if(mail($to, $subject, $message, $headers)) {
-        echo "Notificación enviada.";
-    } else {
-        echo "Error al enviar la notificación.";
     }
 }
 echo '
