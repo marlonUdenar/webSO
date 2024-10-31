@@ -56,16 +56,16 @@
                                  <a href="indexA.php">Home</a>
                               </li>
                               <li id="juegos">
-                                 <a href="juegosA.php">Gestionar<br>Juegos</a>
+                                 <a href="juegosA.php">Gestionar<br>Seccion 1</a>
                               </li>
                               <li id="noticias">
-                                 <a href="noticiasA.php">Gestionar<br>Noticias</a>
+                                 <a href="noticiasA.php">Gestionar<br>Seccion 2</a>
                               </li>
                               <li id="blog">
                                  <a href="blogA.php">Gestionar<br>Blog</a>
                               </li>
                               <li id="contact">
-                                 <a href="contactA.php">Gestionar<br>Eventos</a>
+                                 <a href="contactA.php">Gestionar<br>Seccion 3</a>
                               </li>
                               <li id="login-color">
                                  <a href="login-registerA.php">Gestionar<br>Cuenta</a>
