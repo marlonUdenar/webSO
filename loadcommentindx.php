@@ -7,7 +7,7 @@ $result = $conex->query($sql);
 
 $numb = $result->num_rows;
 if ($result->num_rows > 0) {
-    echo '<section class="layout_padding">' . "\n";
+
     echo '    <div class="container">' . "\n";
     echo '        <div class="row">' . "\n";
     echo '            <div class="col-md-12">' . "\n";
@@ -38,7 +38,7 @@ if ($result->num_rows > 0) {
 
                 // Si no hay resultados, mostrar una imagen por defecto o un mensaje de error
                 // Puedes personalizar esto según tus necesidades
-                echo '                            <img src="images/profile.png" alt="User Profile Image">' . "\n";
+                echo '                            <img src="../images/profile.png" alt="User Profile Image">' . "\n";
             }else{
                 echo '                            <img src="data:image/png;base64,' . base64_encode($img_data) . '" alt="User Profile Image">' . "\n";
             }
@@ -81,7 +81,7 @@ if ($result->num_rows > 0) {
     }
     
 }else{
-    echo '<section class="layout_padding">' . "\n";
+
     echo '    <div class="container">' . "\n";
     echo '        <div class="row">' . "\n";
     echo '            <div class="col-md-12">' . "\n";

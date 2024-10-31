@@ -24,7 +24,7 @@ homeLink.classList.add("active");
              <div class="row">
                  <div class="col-md-12">
                      <div class="aboutheading">
-                         <img src="../images/logolong4.png" alt="Logo de E-Sports-Epicenter">
+                         <img src="../images/logolong2.png" alt="Logo de E-Sports-Epicenter">
                      </div>
                  </div>
              </div>
@@ -155,30 +155,7 @@ homeLink.classList.add("active");
       $conex->close();
       ?>
       <!-- section --> 
-         <div class="section layout_padding blog_blue_bg purp_silver">
-      <div class="container">
-         <div class="row">
-               <div class="col-md-8 offset-md-2">
-                  <div class="full">
-                     <div class="big_blog">
-                        <?php echo ' <img src="data:image/png;base64,' . base64_encode($img) . '" alt="User Profile Image"> '; ?>
-                    </div>
-                     </div>
-                     </div>
-                     <div class="blog_cont_2">
-                           <h3 class="black_font"><?php echo $titulo; ?></h3>
-                           <h5 class="grey_font"><?php echo $fecha; ?></h5>
-                           <p class="black_font"><?php echo $descripcion; ?></p>
-                           <div class="navigation_buttons">
-                              <a id="boton_anterior" href="?pagina=<?php echo ($pagina_actual - 1); ?>" class="btn btn-outline-primary mr-2"><i class="fas fa-chevron-left"></i></a>
-                              <a id="boton_siguiente" href="?pagina=<?php echo ($pagina_actual + 1); ?>" class="btn btn-outline-primary"><i class="fas fa-chevron-right"></i></a>
-                           </div>
-                     </div>
-                  </div>
-               </div>
-         </div>
-      </div>
-   </div>
+      
    <?php require('../loadcommentindx.php') ?> 
 
 <?php require('./layouts/footerU.php') ?>
