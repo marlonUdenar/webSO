@@ -10,7 +10,7 @@ homeLink.classList.add("active");
              <div class="row">
                  <div class="col-md-12">
                      <div class="aboutheading">
-                         <img src="images/logolong4.png" alt="Logo de E-Sports-Epicenter">
+                         <img src="images/logolong2.png" alt="Logo de E-Sports-Epicenter">
                      </div>
                  </div>
              </div>
@@ -45,7 +45,7 @@ homeLink.classList.add("active");
              </div>
            </div>
            <div class="slider-img active">
-             <img src="images/cyber.jpg" alt="4" />
+             <img src="images/arch_Imagen.png" alt="4" />
              <h1>2077</h1>
              <div class="details">
                <h2>CyberPunk 2077</h2>

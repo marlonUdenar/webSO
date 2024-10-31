@@ -54,7 +54,7 @@
                <div class="col-lg-3 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.php"><img src="images/logo.png" alt="#"></a> </div>
+                        <div class="logo"> <a href="index.php"><img src="images/logo.png" alt="#" style="height: 110px;"></a> </div>
                      </div>
                   </div>
                </div>
