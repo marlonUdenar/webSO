@@ -22,58 +22,58 @@ homeLink.classList.add("active");
          <div class="slider-images">
            <div class="slider-img">
              <img src="images/war.png" alt="1" />
-             <h1>Warzone</h1>
+             <h1>Pacman</h1>
              <div class="details">
-               <h2>Warzone</h2>
-               <p>Battle Royale Shooter</p>
+               <h2>Pacman</h2>
+               <p>Gestor de paquetes Pacman eficiente</p>
              </div>
            </div>
            <div class="slider-img">
              <img src="images/cs24.png" alt="2" />
-             <h1>CS2</h1>
+             <h1>Personalización</h1>
              <div class="details">
-               <h2>Counter Strike 2</Strike></h2>
-               <p>Shooter Tactico</p>
+               <h2>Personalización</Strike></h2>
+               <p>Altamente personalizable y flexible</p>
              </div>
            </div>
            <div class="slider-img">
              <img src="images/gta5car.png" alt="3" />
-             <h1>gta vi</h1>
+             <h1>Actualizaciones</h1>
              <div class="details">
-               <h2>Grand Theft Auto VI</h2>
-               <p>Rpg Mundo Abierto</p>
+               <h2>Actualizaciones</h2>
+               <p>Rolling Release sin actualizaciones mayores</p>
              </div>
            </div>
            <div class="slider-img active">
              <img src="images/arch_Imagen.png" alt="4" />
-             <h1>2077</h1>
+             <h1>Simplicidad</h1>
              <div class="details">
-               <h2>CyberPunk 2077</h2>
-               <p>Rpg / Juego de Rol</p>
+               <h2>Simplicidad</h2>
+               <p>Simplicidad y minimalismo extremo</p>
              </div>
            </div>
            <div class="slider-img">
-             <img src="images/fallout.jpeg" alt="5" />
-             <h1>Fallout</h1>
+             <img src="images/fallout.jpg" alt="5" />
+             <h1>Comunidad</h1>
              <div class="details">
-               <h2>Nueva Serie de Fallout</h2>
-               <p>Una serie de amazon prime del popular juego de rol</p>
+               <h2>Comunidad</h2>
+               <p>Gran comunidad de soporte activo</p>
              </div>
            </div>
            <div class="slider-img">
              <img src="images/tekken.jpg" alt="6" />
-             <h1>Tekken</h1>
+             <h1>Documentación</h1>
              <div class="details">
-               <h2>Tekken 8</h2>
-               <p>Buenas Criticas de la Nueva entrega</p>
+               <h2>Documentación</h2>
+               <p>Documentación detallada en Arch Wiki</p>
              </div>
            </div>
            <div class="slider-img">
              <img src="images/fifa.jpg" alt="7" />
-             <h1>FC24</h1>
+             <h1>Conocimiento</h1>
              <div class="details">
-               <h2>EA FC24</h2>
-               <p>La Ultima Entrega del popular juego esta en descuento</p>
+               <h2>Conocimiento</h2>
+               <p>Requiere conocimientos técnicos avanzados</p>
              </div>
            </div>
          </div>
