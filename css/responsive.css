@@ -1407,7 +1407,7 @@
     width: 135px;
     height: 50px;
     float: left;
-    background: #000;
+    background: #1e344c;
     text-align: center;
     line-height: 50px;
     color: #fff;
@@ -1449,7 +1449,7 @@ p {
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
-    color: #212222;
+    color: #fff;
 }
 
 .logo_section {

@@ -68,7 +68,7 @@ h6 {
 	padding: 0 0 10px 0;
 	font-weight: normal;
 	line-height: normal;
-	color: #1793d1;
+	color: #1ea2e3;
 	margin: 0
 }
 
@@ -1382,7 +1382,7 @@ nav.main-menu {
 }
 
 .dark_bg {
-    background: #07070A;
+    background: #1e344c;
 }
 
 
@@ -1395,7 +1395,7 @@ nav.main-menu {
 }
 
 .grey_font {
-	color: #79797a;
+	color: #62BEC1;
 }
 
 /*---------------------------------------------------------------------
@@ -1802,7 +1802,7 @@ input[type="radio"] .styled:checked+label::after {
     width: 180px;
     height: 55px;
     float: left;
-    background: #000;
+    background: #1e344c;
     text-align: center;
     line-height: 55px;
     color: #fff;
@@ -1847,7 +1847,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .blog_cont h5 {
-    color: #62BEC1;
+    color: #35bcff;
     font-weight: 500;
     margin-top: -10px;
     margin-bottom: 10px;
@@ -1894,7 +1894,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .comment_form button {
-    background: #FB8B24;
+    background: #1e344c;
     float: left;
     width: 290px;
     height: 70px;
@@ -1960,7 +1960,7 @@ input[type="radio"] .styled:checked+label::after {
     padding: 40px;
     box-shadow: 0 0px 45px -31px #000;
     margin-bottom: 0;
-    background: #000;
+    background: #1e344c;
 }
 
 .blog_cont_2 h3 {
@@ -1982,7 +1982,7 @@ input[type="radio"] .styled:checked+label::after {
 /** footer **/
 
 footer {
-    background: #07070A;
+    background: #1e344c;
     min-height: 500px;
     padding: 90px 0;
 }
@@ -2007,7 +2007,7 @@ footer {
 }
 
 .footer_links form {
-    background: #07070A;
+    background: #1e344c;
 	border: #fff;
     padding: 1px;
 }
@@ -2115,7 +2115,7 @@ ul.social_icon li a {
 }
 
 .Blog-bg {
-	background-color: #07070A;
+	background-color: #1e344c;
 }
 
 .Blog-bg .Blogheading h3 { 
@@ -2129,7 +2129,7 @@ ul.social_icon li a {
 
 
 .contact-bg {
-	background-color: #07070A;
+	background-color: #b5bcc1;
 }
 
 .contact-bg .contactheading h3 { 
@@ -2139,6 +2139,7 @@ ul.social_icon li a {
     text-align:center;
     padding: 40px 0px;
     text-transform: uppercase; 
+	color: #1e344c;
 }
 
 #map {
@@ -2821,7 +2822,7 @@ login-register END
 
 .container .dk {
     border-bottom-style: 0px;
-	background-color: #07070A;
+	background-color: #1e344c;
 	border-top-style: solid;
 	border-top-width: 0px;
 	padding-top: 30px;
