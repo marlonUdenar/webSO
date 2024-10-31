@@ -62,7 +62,7 @@
                                  <a href="noticiasA.php">Gestionar<br>Seccion 2</a>
                               </li>
                               <li id="blog">
-                                 <a href="blogA.php">Gestionar<br>Blog</a>
+                                 <a href="blogA.php">Gestionar<br>Foro</a>
                               </li>
                               <li id="contact">
                                  <a href="contactA.php">Gestionar<br>Seccion 3</a>

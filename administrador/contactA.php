@@ -8,7 +8,7 @@ homeLink.classList.add("active");
 <section>
    <div class="main_event_edit">
       <div class="sectionEA">
-         <h1>Publicar Evento</h2>
+         <h1>Publicar Entrada</h2>
          <form action="cargas/cargarEvento.php" method="POST" enctype="multipart/form-data">
                <div class="dark_bg2E">
                   <div class="panel1E">
@@ -27,7 +27,7 @@ homeLink.classList.add("active");
       </div>
 
       <div class="sectionEA">
-         <h1>Modificar/Eliminar Evento</h2>
+         <h1>Modificar/Eliminar Entrada</h2>
          <form action="cargas/modificarEvento.php" method="POST" enctype="multipart/form-data">
                <div class="dark_bg2E">
                   <div class="panel1E">
@@ -73,7 +73,7 @@ homeLink.classList.add("active");
             <div class="row">
                <div class="col-md-12">
                   <div class="contactheading">
-                     <h3>Eventos</h3>
+                     <h3>Sitios de Interes</h3>
                   </div>
                </div>
             </div>

@@ -135,7 +135,7 @@ function enviarRespuesta1(id) {
       <div class="row">
          <div class="col-md-12">
             <div class="Blogheading">
-               <h3>Blog </h3>
+               <h3>Foro</h3>
             </div>
          </div>
       </div>
@@ -248,7 +248,7 @@ $conex->close();
                            <div class="col-md-12">
                               <div class="row">
                                  <div class="col-md-6as">
-                                    <input type="text" name="coment" placeholder="tupura" style=" height: 150px;">
+                                    <input type="text" name="coment" placeholder="Escribe tu comentario" style=" height: 150px;">
                                     <input type="hidden" name="usuario" value="<?php echo $_SESSION['usuario']; ?>">
                                     <!-- Campo oculto para enviar $id -->
                                     <input type="hidden" name="id" value="<?php echo $id; ?>">
