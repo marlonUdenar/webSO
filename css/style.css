@@ -41,7 +41,7 @@ body {
 	font-family: 'poppins', sans-serif;
 	line-height: 1.80857;
 	font-weight: normal;
-	background-color: #6622CC;
+	background-color: #b5bcc1;
 	overflow-x: hidden;
 }
 
@@ -68,7 +68,7 @@ h6 {
 	padding: 0 0 10px 0;
 	font-weight: normal;
 	line-height: normal;
-	color: #FB8B24;
+	color: #1793d1;
 	margin: 0
 }
 
@@ -132,7 +132,7 @@ p {
     font-weight: 300;
     font-size: 17px;
     line-height: 30px;
-    color: #212222;
+    color: #fff;
 }
 
 a {
@@ -247,7 +247,7 @@ button {
 }
 
 .purp_silver {
-	background: #6622CC;
+	background: #b5bcc1;
 }
 
 .theme_bg {
@@ -273,7 +273,7 @@ button {
     width: 70%;
     content: "";
     max-height: 485px;
-    background: #FB8B24;
+    background: #1793d1;
     position: absolute;
     top: 28%;
     height: 100%;
@@ -1749,7 +1749,7 @@ input[type="radio"] .styled:checked+label::after {
 
 #slider_main .carousel-control-prev:hover, #slider_main .carousel-control-next:hover,
 #slider_main .carousel-control-prev:focus, #slider_main .carousel-control-next:focus {
-   background: #FB8B24;
+   background: #1793d1;
    color: #fff;
 }
 
@@ -1813,7 +1813,7 @@ input[type="radio"] .styled:checked+label::after {
 
 .button_section a:hover,
 .button_section a:focus {
-	background: #FB8B24 !important;
+	background: #1793d1 !important;
     color: #fff;
 }
 
@@ -1960,12 +1960,12 @@ input[type="radio"] .styled:checked+label::after {
     padding: 40px;
     box-shadow: 0 0px 45px -31px #000;
     margin-bottom: 0;
-    background: #fff;
+    background: #000;
 }
 
 .blog_cont_2 h3 {
     font-size: 38px;
-    color: #141615;
+    color: #fff;
     line-height: 50px;
     font-weight: 600;
     padding: 0;
@@ -3043,10 +3043,10 @@ login-register END
 .navigation_buttons .btn{
 	color: #00f7ff;
 	border-color: #00f7ff;
-	background-color: #FB8B24;
+	background-color: #1793d1;
 }
 .navigation_buttons .btn:hover{
-	background-color: #6622CC;
+	background-color: #00f7ff;
 }
 .grey_fontas{
 	color: #2ac5ca;
