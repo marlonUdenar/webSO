@@ -64,20 +64,39 @@ if ($result->num_rows > 0) {
                 $usr = $result_usr->fetch_assoc();
                 $img = $usr["image"];
                 $nom = $usr["nombre"];
-                echo '<div class="full comment_blog_line">' . "\n";
-                echo '    <div class="row">' . "\n";
-                echo '        <div class="col-md-1 offset-md-1">' . "\n";
-                echo '           <img src="data:image/png;base64,' . base64_encode($img) . '" alt="User Profile Image">' . "\n";
-                echo '        </div>' . "\n";
-                echo '        <div class="col-md-8">' . "\n";
-                echo '            <div class="full contact_text">' . "\n";
-                echo '                <h3>'.$nom.'</h3>' . "\n";
-                echo '                <h4>'.$respuesta["fecha"].'</h4>' . "\n";
-                echo '                <p>'.$respuesta["des"].'</p>' . "\n";
-                echo '            </div>' . "\n";
-                echo '        </div>' . "\n";
-                echo '    </div>' . "\n";
-                echo '</div>' . "\n";
+                if ($img == NULL) {
+
+                    echo '<div class="full comment_blog_line">' . "\n";
+                    echo '    <div class="row">' . "\n";
+                    echo '        <div class="col-md-1 offset-md-1">' . "\n";
+                    echo '           <img src="../images/profile.png' . base64_encode($img) . '" alt="User Profile Image">' . "\n";
+                    echo '        </div>' . "\n";
+                    echo '        <div class="col-md-8">' . "\n";
+                    echo '            <div class="full contact_text">' . "\n";
+                    echo '                <h3>'.$nom.'</h3>' . "\n";
+                    echo '                <h4>'.$respuesta["fecha"].'</h4>' . "\n";
+                    echo '                <p>'.$respuesta["des"].'</p>' . "\n";
+                    echo '            </div>' . "\n";
+                    echo '        </div>' . "\n";
+                    echo '    </div>' . "\n";
+                    echo '</div>' . "\n";
+                }else{
+                    echo '<div class="full comment_blog_line">' . "\n";
+                    echo '    <div class="row">' . "\n";
+                    echo '        <div class="col-md-1 offset-md-1">' . "\n";
+                    echo '           <img src="data:image/png;base64,' . base64_encode($img) . '" alt="User Profile Image">' . "\n";
+                    echo '        </div>' . "\n";
+                    echo '        <div class="col-md-8">' . "\n";
+                    echo '            <div class="full contact_text">' . "\n";
+                    echo '                <h3>'.$nom.'</h3>' . "\n";
+                    echo '                <h4>'.$respuesta["fecha"].'</h4>' . "\n";
+                    echo '                <p>'.$respuesta["des"].'</p>' . "\n";
+                    echo '            </div>' . "\n";
+                    echo '        </div>' . "\n";
+                    echo '    </div>' . "\n";
+                    echo '</div>' . "\n";
+                }
+                
             }
             
             echo '                            </div>' . "\n";
