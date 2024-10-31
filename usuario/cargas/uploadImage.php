@@ -2,7 +2,12 @@
 session_start();
 include("../../conexion.php");
 
-// Get the user's email (you can modify this based on your session handling)
+// Enable error reporting
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Get the user's email
 $email = $_SESSION['usuario'];
 
 // Check if an image file was uploaded
@@ -14,9 +19,11 @@ if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
     // Update the image data in the database
     $sql = "UPDATE datosusuario SET image = ? WHERE email = ?";
     $statement = $conex->prepare($sql);
+    if ($statement === false) {
+        die('MySQL prepare error: ' . $conex->error);
+    }
     $statement->bind_param('ss', $newImgContent, $email);
     $result = $statement->execute();
-
     
     if ($result) {
         echo '
@@ -39,7 +46,7 @@ if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
             alert("Seleccionar una Imagen");
             window.location = "../login-registerU.php";
         </script>
-        ';
+    ';
 }
 
 // Close the database connection
