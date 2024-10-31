@@ -14,10 +14,6 @@
 
 <?php require('./layouts/headerA.php') ?> 
 
-<script>
-const homeLink = document.getElementById("blog");
-homeLink.classList.add("active");
-</script>
 
 <section>
     <div class="sectionJA">
@@ -91,14 +87,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let sendButton = document.getElementById('btnEnviar');
     sendButton.addEventListener('click', (event) => {
         event.preventDefault();
-        enviarRespuesta(commentId);  // Llama a enviarRespuesta con commentId
+        enviarRespuesta1(commentId);  // Llama a enviarRespuesta con commentId
     });
 });
 
 
 
 // JavaScript para enviar la respuesta
-function enviarRespuesta(id) {
+function enviarRespuesta1(id) {
     var respuesta = document.getElementById("replyTextarea").value;
     var usuario = $("input[name='usuario']").val(); // Obtener el valor del campo oculto "usuario"
 // Obtener el valor del campo oculto "id"
@@ -220,16 +216,16 @@ $conex->close();
 <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="background-color: #07070A;">
                 <h5 class="modal-title" id="exampleModalLabel">Responder al Comentario</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="background-color: #07070A;">
                 <textarea id="replyTextarea" class="form-control" rows="4"></textarea>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer" style="background-color: #07070A;">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" onclick="enviarRespuesta()">Enviar</button>
+                <button type="button" id="btnEnviar" class="btn btn-primary"  style="background-color: #FB8B24">Enviar</button>
             </div>
         </div>
     </div>
