@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recuperar datos del formulario
-    $nombre = $_POST['nombre'];
+    $nombre = $_POST['name'];
     $email = $_POST['email'];
-    $asunto = $_POST['asunto'];
+    $asunto = $_POST['subject'];
     $mensaje = $_POST['mensaje'];
 
     // Dirección de correo de destino
@@ -19,15 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cuerpo .= "Mensaje:\n$mensaje\n";
 
     // Cabeceras del correo
-    $cabeceras = "From: $email" . "\r\n" .
-                 "Reply-To: $email" . "\r\n" .
-                 "X-Mailer: PHP/" . phpversion();
+    $cabeceras = "From: $email" . "\r\n" ;
 
     // Enviar el correo
     if (mail($destinatario, $asunto_correo, $cuerpo, $cabeceras)) {
         echo '<script>alert("Mensaje enviado exitosamente."); window.location = "tu_pagina_de_contacto.php";</script>';
     } else {
-        echo '<script>alert("Hubo un error al enviar el mensaje. Intenta nuevamente."); window.location = "tu_pagina_de_contacto.php";</script>';
+        echo '<script>alert("Hubo un error al enviar el mensaje. Intenta nuevamente."); window.location = "index.php";</script>';
     }
 }
 ?>
