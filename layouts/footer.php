@@ -41,26 +41,26 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer_links">
                         <h3>Contactanos</h3>
-                        <form action="index.php">
-                        <fieldset>
-                            <div class="field">
-                                <input type="text" name="name" placeholder="nombre" required />
-                            </div>
-                            <div class="field">
-                                <input type="email" name="email" placeholder="email" required />
-                            </div>
-                            <div class="field">
-                                <input type="text" name="subject" placeholder="asunto" required />
-                            </div>
-                            <div class="field">
-                                <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                            </div>
-                            <div class="field">
-                                <div class="center">
-                                    <button class="reply_bt" type="submit">Enviar</button>
+                        <form action="SentForm.php" method="POST">
+                            <fieldset>
+                                <div class="field">
+                                    <input type="text" name="name" placeholder="nombre" required />
                                 </div>
-                            </div>
-                        </fieldset>
+                                <div class="field">
+                                    <input type="email" name="email" placeholder="email" required />
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="subject" placeholder="asunto" required />
+                                </div>
+                                <div class="field">
+                                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                                </div>
+                                <div class="field">
+                                    <div class="center">
+                                        <button name="enviar" class="reply_bt" type="submit">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
