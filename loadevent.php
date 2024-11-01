@@ -1,6 +1,6 @@
 <?php
 // Conexión a la base de datos
-include("../conexion.php");
+include("conexion.php");
 // Consulta SQL para obtener los datos
 $sql = "SELECT titulo, fecha, des, img, url FROM tabevento";
 $result = $conex->query($sql);
