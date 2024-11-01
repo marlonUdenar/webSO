@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Enviar el correo
     if (mail($destinatario, $asunto_correo, $cuerpo, $cabeceras)) {
-        echo '<script>alert("Mensaje enviado exitosamente."); window.location = "tu_pagina_de_contacto.php";</script>';
+        echo '<script>alert("Mensaje enviado exitosamente."); window.location = "index.php";</script>';
     } else {
         echo '<script>alert("Hubo un error al enviar el mensaje. Intenta nuevamente."); window.location = "index.php";</script>';
     }
