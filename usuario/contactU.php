@@ -10,7 +10,7 @@ homeLink.classList.add("active");
             <div class="row">
                <div class="col-md-12">
                   <div class="contactheading">
-                     <h3>Eventos</h3>
+                     <h3>Sitios de Interes</h3>
                   </div>
                </div>
             </div>
