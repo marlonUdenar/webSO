@@ -47,20 +47,20 @@
                         <form action="index.php">
                         <fieldset>
                             <div class="field">
-                                <input type="text" name="name" placeholder="nombre" required="" />
+                                <input type="text" name="name" placeholder="nombre" required />
                             </div>
                             <div class="field">
-                                <input type="email" name="email" placeholder="email" required="" />
+                                <input type="email" name="email" placeholder="email" required />
                             </div>
                             <div class="field">
-                                <input type="text" name="subject" placeholder="asunto" required="" />
+                                <input type="text" name="subject" placeholder="asunto" required />
                             </div>
                             <div class="field">
-                                <textarea placeholder="Mensaje"></textarea>
+                                <textarea name="mensaje" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="field">
                                 <div class="center">
-                                    <button class="reply_bt">Enviar</button>
+                                    <button class="reply_bt" type="submit">Enviar</button>
                                 </div>
                             </div>
                         </fieldset>
