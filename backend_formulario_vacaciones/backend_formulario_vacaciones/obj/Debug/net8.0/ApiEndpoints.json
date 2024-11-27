@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "TuProyecto.Controllers.FormularioController",
+    "Method": "Register",
+    "RelativePath": "api/Formulario/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formulario",
+        "Type": "backend_formulario_vacaciones.solicitud",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

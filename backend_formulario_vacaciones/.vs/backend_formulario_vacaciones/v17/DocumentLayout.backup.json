@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7684D5F2-4C74-4335-B303-E7482A9D3C02}|backend_formulario_vacaciones\\backend_formulario_vacaciones.csproj|c:\\users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\controllers\\solicitudcontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7684D5F2-4C74-4335-B303-E7482A9D3C02}|backend_formulario_vacaciones\\backend_formulario_vacaciones.csproj|solutionrelative:backend_formulario_vacaciones\\controllers\\solicitudcontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7684D5F2-4C74-4335-B303-E7482A9D3C02}|backend_formulario_vacaciones\\backend_formulario_vacaciones.csproj|c:\\users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7684D5F2-4C74-4335-B303-E7482A9D3C02}|backend_formulario_vacaciones\\backend_formulario_vacaciones.csproj|solutionrelative:backend_formulario_vacaciones\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7684D5F2-4C74-4335-B303-E7482A9D3C02}|backend_formulario_vacaciones\\backend_formulario_vacaciones.csproj|c:\\users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7684D5F2-4C74-4335-B303-E7482A9D3C02}|backend_formulario_vacaciones\\backend_formulario_vacaciones.csproj|solutionrelative:backend_formulario_vacaciones\\solicitud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\Program.cs",
+              "RelativeDocumentMoniker": "backend_formulario_vacaciones\\Program.cs",
+              "ToolTip": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\Program.cs",
+              "RelativeToolTip": "backend_formulario_vacaciones\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:19:34.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "solicitudControlador.cs",
+              "DocumentMoniker": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\Controllers\\solicitudControlador.cs",
+              "RelativeDocumentMoniker": "backend_formulario_vacaciones\\Controllers\\solicitudControlador.cs",
+              "ToolTip": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\Controllers\\solicitudControlador.cs",
+              "RelativeToolTip": "backend_formulario_vacaciones\\Controllers\\solicitudControlador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:18:34.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "solicitud.cs",
+              "DocumentMoniker": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\solicitud.cs",
+              "RelativeDocumentMoniker": "backend_formulario_vacaciones\\solicitud.cs",
+              "ToolTip": "C:\\Users\\bddmr\\source\\repos\\backend_formulario_vacaciones\\backend_formulario_vacaciones\\solicitud.cs",
+              "RelativeToolTip": "backend_formulario_vacaciones\\solicitud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:13:26.183Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

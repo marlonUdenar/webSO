@@ -1,0 +1,80 @@
+<form [formGroup]="formularioForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <div class="form-row">
+        <!-- Campo Primer Nombre con ícono de búsqueda -->
+        <div class="field">
+          <label for="firstName">Primer nombre</label>
+            <input pInputText id="firstName" formControlName="firstName" type="text" placeholder="Primer nombre"  />
+        </div>
+  
+        <!-- Campo Apellido con ícono de apellido -->
+        <div class="field">
+          <label for="lastName">Apellido</label>
+            <input pInputText id="lastName" formControlName="lastName" type="text" placeholder="Apellido" />
+        </div>
+      </div>
+  
+      <!-- Campo Correo Electrónico con ícono de correo -->
+      <div class="field">
+        <label for="email">Correo electrónico</label><br>
+        <span class="p-input-icon-left">
+          <i class="pi pi-envelope"></i>  <!-- Ícono de correo electrónico -->
+          <input pInputText id="email" formControlName="email" type="email"  />
+        </span>
+      </div>
+  
+      <!-- Campo Teléfono con ícono de teléfono -->
+      <div class="field">
+        <label for="phone">Teléfono</label><br>
+        <span class="p-input-icon-left">
+          <i class="pi pi-phone"></i>  <!-- Ícono de teléfono -->
+          <input pInputText id="phone" formControlName="phone" type="tel"  />
+        </span>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <div class="field">
+        <label for="managerName">El nombre del gerente</label>
+        <span class="p-input-icon-left" style="width: 100%; display: flex; align-items: center;">
+          <i class="pi pi-user"></i>  <!-- Ícono de usuario -->
+          <input pInputText id="managerName" formControlName="managerName" type="text"  />
+        </span>
+      </div>
+  
+      <div class="field">
+        <label for="managerEmail">Correo electrónico del gerente</label>
+        <span class="p-input-icon-left" style="width: 100%; display: flex; align-items: center;">
+          <i class="pi pi-envelope" ></i>  <!-- Ícono de correo electrónico -->
+          <input pInputText id="managerEmail" formControlName="managerEmail" type="email"/>
+        </span>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <div class="field">
+        <label for="startDate">Fecha de inicio</label><br>
+        <span class="p-input-icon-left">
+          <i class="pi pi-calendar"></i>  <!-- Ícono de calendario -->
+          <p-calendar id="startDate" formControlName="startDate" dateFormat="mm/dd/yy" placeholder="MM/DD/YY"></p-calendar>
+        </span>
+      </div>
+      <div class="field">
+        <label for="endDate">Fecha de finalización</label><br>
+        <span class="p-input-icon-left">
+          <i class="pi pi-calendar"></i>  <!-- Ícono de calendario -->
+          <p-calendar id="endDate" formControlName="endDate" dateFormat="mm/dd/yy" placeholder="MM/DD/YY"></p-calendar>
+        </span>
+      </div>
+      <div class="field">
+        <label for="notes">Notas</label><br>
+        <span class="p-input-icon-left">
+          <i class="pi pi-comment"></i>  <!-- Ícono de notas -->
+          <textarea pInputTextarea id="notes" formControlName="notes" rows="4" ></textarea>
+        </span>
+      </div>
+    </div>
+    
+    <button pButton type="submit" label="Enviar" class="submit-button"></button>
+  </form>
+  

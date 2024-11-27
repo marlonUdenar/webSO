@@ -1,0 +1,4 @@
+¿Tiene alguna incidencia definir en la base de datos los campos de fecha como tipo DATE o como varchar al momento de enviar la peticion?
+
+
+Definir los campos de fecha como DATE en la base de datos es mucho más adecuado que usar VARCHAR, ya que garantiza la validación de las fechas, mejora la eficiencia en las consultas y permite manipulaciones de fechas más precisas. Usar VARCHAR puede causar problemas de formato inconsistente, errores en la validación y dificultades al realizar operaciones con fechas. Por lo tanto, es recomendable siempre usar el tipo DATE para evitar complicaciones al enviar y procesar las fechas en las peticiones.

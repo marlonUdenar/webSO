@@ -1,0 +1,92 @@
+@import "primeicons/primeicons.css";
+
+body {
+    background-color: #275c5a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+button {
+  background-color: #a67802;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #845f02;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+  
+.field {
+  flex: 1;
+  display: block; /* Esto hace que cada campo ocupe todo el ancho y esté uno debajo del otro */
+  margin-bottom: 15px;
+}
+ 
+input, select, textarea, button {
+  margin: 10px 0;
+  background-color: #244f4d;
+  height: 40px; 
+}
+
+.p-button-label {
+  width: 150px; /* Ajusta el valor según el tamaño que desees */
+  padding: 10px; /* Opcional: ajusta el espaciado dentro del botón */
+}
+
+p-calendar {
+  display: block !important;  /* Cambiar display a block */
+  width: 100% !important;     /* Asegura que el p-calendar ocupe todo el ancho */
+}
+
+p-calendar {
+  display: block;            /* Asegura que el componente p-calendar sea un bloque */
+  width: 100%;               /* Asegura que p-calendar ocupe el 100% del contenedor */
+  margin-bottom: 1rem;       /* Espaciado inferior, si es necesario */
+}
+
+/* Asegura que el p-calendar ocupe todo el ancho */
+p-calendar {
+  display: block !important;            /* Cambia a block para que ocupe todo el ancho disponible */
+  width: 100% !important;               /* Asegura que p-calendar ocupe el 100% del contenedor */
+  margin-bottom: 1rem;                  /* Opcional: agrega espacio debajo si es necesario */
+}
+
+/* Ajusta el inputwrapper dentro de p-calendar */
+p-calendar .p-inputwrapper {
+  display: block !important;            /* Hace que el contenedor del input sea un bloque */
+  width: 100% !important;               /* Asegura que el contenedor ocupe el 100% del espacio */
+  box-sizing: border-box;               /* Considera el padding en el ancho total */
+}
+
+/* Ajusta el input dentro de p-calendar */
+p-calendar input {
+  width: 100% !important;               /* Asegura que el input ocupe el 100% */
+  padding: 0.5rem;                      /* Ajusta el padding si es necesario */
+  box-sizing: border-box;               /* Considera el padding dentro del ancho total */
+}
+
+/* En caso de que sea necesario, ajusta el estilo del inputtext */
+.p-inputtext {
+  width: 100% !important;               /* Asegura que el input ocupe todo el ancho */
+  padding: 0.5rem;                      /* Ajusta el padding si es necesario */
+  box-sizing: border-box;               /* Asegura que el padding se incluya dentro del ancho */
+}
